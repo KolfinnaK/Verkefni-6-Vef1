@@ -1,0 +1,77 @@
+/* layout.scss */
+
+header,
+.wrapper {
+  animation: var(--transition-time-long) var(--transition-timing-function) fade-in;
+}
+
+/* Main */
+main {
+  width: 100%;
+}
+
+main > .content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 2);
+}
+
+/*** Inngangsefni á forsíðu ***/
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--spacing);
+
+  img {
+    order: 1;
+    border-radius: var(--border-radius-image);
+  }
+}
+
+
+/* Wrapper */
+.wrapper {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  justify-items: center;
+  gap: var(--vertical-space);
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-background-primary);
+  
+  .wrapper-content {
+    width: var(--width-offset);
+    max-width: var(--max-width);
+  }
+  
+  .wrapper-nav {
+    margin-bottom: var(--spacing);
+  }
+  
+  @media (width >= 800px) {
+    .wrapper-content {
+      display: grid;
+      grid-template-columns: repeat(var(--columns), 1fr);
+      gap: var(--gutter);
+    }
+  
+    .wrapper-nav {
+      grid-column: span 2;
+    }
+  
+    .wrapper-main {
+      grid-column: span 10;
+    }
+  }
+}
+  
+/* Haus */
+header {
+  padding: var(--spacing) calc(var(--spacing) * 1.5);
+  width: 100%;
+  background-color: var(--color-background-secondary);
+  border-bottom: var(--border-with-background);
+  text-align: center;
+}

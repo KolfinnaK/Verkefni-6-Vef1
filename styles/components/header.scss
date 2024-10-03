@@ -1,0 +1,35 @@
+/* components/header.scss */
+@import '../config';
+
+
+header {
+    padding: --spacing calc(--spacing * 1.5);
+    width: 100%;
+    background-color: --color-background-secondary;
+    border-bottom: --border-with-background;
+    text-align: center;
+  }
+  
+  nav {
+    width: 100%;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing);
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-bottom: calc(--spacing / 2);
+    text-align: left;
+  }
+  
+  @media (min-width: 800px) {
+    nav ul {
+      display: block;
+    }
+  }
+  

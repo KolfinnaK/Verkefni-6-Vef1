@@ -1,0 +1,45 @@
+/* components/tables.scss */
+
+@import '../config';
+
+.table-wrapper {
+    overflow-x: auto;
+  }
+  
+  table {
+    margin-bottom: var(--spacing);
+    border-spacing: 0;
+  
+    th,
+    td {
+      padding: calc(var(--spacing) / 2);
+      text-align: left;
+    }
+  
+    tr th:first-child,
+    tr td:first-child {
+      border-top-left-radius: var(--border-radius-regular);
+      border-bottom-left-radius: var(--border-radius-regular);
+    }
+  
+    tr th:last-child,
+    tr td:last-child {
+      border-top-right-radius: var(--border-radius-regular);
+      border-bottom-right-radius: var(--border-radius-regular);
+    }
+  
+    tbody tr:nth-child(2n + 1) {
+      background-color: var(--color-background-secondary);
+    }
+  
+    img {
+      width: 100%;
+      min-width: var(--min-width-image);
+      max-width: var(--max-width-image);
+    }
+  
+    td:last-child {
+      white-space: nowrap;
+    }
+  }
+  

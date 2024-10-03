@@ -1,0 +1,32 @@
+/* styles.scss */
+
+/* Configuration and variables */
+@import 'styles/config';
+
+/* Reset styles */
+@import 'styles/reset';
+@import 'styles/helpers';
+
+/* Typography */
+@import 'styles/typography';
+
+/* Base styles */
+@import 'styles/base';
+@import 'styles/events';
+
+/* Layout */
+@import 'styles/layout';
+
+/* Components */
+@import 'styles/components/buttons';
+@import 'styles/components/header';
+@import 'styles/components/footer';
+@import 'styles/components/tables';
+@import 'styles/components/cards';
+@import 'styles/components/form';
+
+/* Animations */
+@import 'styles/animations';
+
+/* Media queries */
+@import 'styles/media-queries';

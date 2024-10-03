@@ -1,0 +1,40 @@
+/* media-queries.scss */
+
+@media (width >= 800px) {
+  .wrapper {
+    gap: var(--vertical-space-large);
+  }
+}
+  
+@media (width >= 500px) {
+  .intro {
+    flex-direction: row;
+  
+    img {
+      max-width: var(--max-width-image);
+    }
+  }
+}
+  
+
+@media (width >= 700px) {
+  footer .content {
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: auto;
+    width: var(--width-offset);
+    max-width: var(--max-width);
+  }
+      
+  footer .content > section {
+    grid-column: span 4;
+  }
+        
+  .cards > .content {
+    grid-template-columns: repeat(calc(var(--columns) - 2), 1fr);
+    grid-template-rows: auto;
+  }
+  
+  .card {
+    grid-column: span 5;
+  }
+}
