@@ -1,15 +1,16 @@
-/* reset.scss */
+/* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
 * {
-  margin: 0;
-  padding: 0;
-}
+    margin: 0;
+    padding: 0;
+  }
   
-html {
-  box-sizing: border-box;
-}
-  
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+  /* Reiknum stærð á öllum boxum sem border-box */
+  html {
+    box-sizing: border-box;
+  }
+  /* og látum erfast á allt */
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
